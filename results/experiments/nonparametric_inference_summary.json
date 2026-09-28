@@ -1,0 +1,33 @@
+{
+  "wilcoxon_tests": {
+    "Method_A_vs_Bench": {
+      "w_stat": 342720.0,
+      "p_value": 0.01587888376693702
+    },
+    "Method_B_vs_Bench": {
+      "w_stat": 357523.0,
+      "p_value": 0.22664254301447928
+    },
+    "Method_C_vs_Bench": {
+      "w_stat": 371140.0,
+      "p_value": 0.9181439844634696
+    }
+  },
+  "bootstrap_95_ci": {
+    "Method_A_Excess": {
+      "mean": 0.01663216137058168,
+      "ci_lower": 0.010013641518720013,
+      "ci_upper": 0.023364024490561942
+    },
+    "Method_B_Excess": {
+      "mean": -0.00034118596766580234,
+      "ci_lower": -0.0024788119912725706,
+      "ci_upper": 0.001899814625153988
+    },
+    "Method_C_Excess": {
+      "mean": 0.0015889531337863112,
+      "ci_lower": -0.0007739822533192888,
+      "ci_upper": 0.003899666102038209
+    }
+  }
+}

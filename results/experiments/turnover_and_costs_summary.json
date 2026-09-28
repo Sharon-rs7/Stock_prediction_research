@@ -1,0 +1,29 @@
+{
+  "turnover": {
+    "Method_A_Prediction_Only": 0.7266666666666666,
+    "Method_B_Similarity_Only": 0.08999999999999998,
+    "Method_C_Combined_Fusion": 0.8375
+  },
+  "gross_excess_return": {
+    "Method_A": 0.01663216137058168,
+    "Method_B": -0.00034118596766580234,
+    "Method_C": 0.0015889531337863112
+  },
+  "net_excess_returns": {
+    "10bps": {
+      "Method_A": 0.015905494703915012,
+      "Method_B": -0.0004311859676658023,
+      "Method_C": 0.0007514531337863111
+    },
+    "20bps": {
+      "Method_A": 0.015178828037248347,
+      "Method_B": -0.0005211859676658023,
+      "Method_C": -8.604686621368888e-05
+    },
+    "30bps": {
+      "Method_A": 0.01445216137058168,
+      "Method_B": -0.0006111859676658023,
+      "Method_C": -0.0009235468662136888
+    }
+  }
+}

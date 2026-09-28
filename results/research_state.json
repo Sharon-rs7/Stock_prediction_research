@@ -1,0 +1,60 @@
+{
+  "phase": "SCIENTIFIC_VALIDATION_AND_GAP_CLOSURE",
+  "project_title": "Machine Learning Framework for Stock Price Forecasting and Similar-Stock Recommendation Using Historical OHLCV Data",
+  "protocol_version": "Scientific Validation Spec v2.0",
+  "updated_at": "2026-09-29T00:36:00",
+  "hardware_platform": "NVIDIA GeForce RTX 5050 Laptop GPU (CUDA 13.2)",
+  "dataset": {
+    "source": "AmirTrader/YahooFinance",
+    "commit": "c3c01ff2fc62e02c338d2e03bdfd71016da09701",
+    "raw_files": 6708,
+    "universe_b_tickers": 2435,
+    "calendar_days": 1759,
+    "total_rows": 4283165
+  },
+  "temporal_splits": {
+    "train": {"start": "2019-09-26", "end": "2024-03-28", "days": 1134, "rows": 2276725},
+    "purge_1": {"start": "2024-04-01", "end": "2024-04-05", "days": 5},
+    "val": {"start": "2024-04-08", "end": "2025-06-27", "days": 307, "rows": 747545},
+    "purge_2": {"start": "2025-06-30", "end": "2025-07-07", "days": 5},
+    "test": {"start": "2025-07-08", "end": "2026-09-25", "days": 308, "rows": 737805}
+  },
+  "completed_stages": [
+    "STAGE_1_RAW_DATA_INGESTION_AND_AUDIT",
+    "STAGE_2_UNIVERSE_B_SELECTION",
+    "STAGE_3_FEATURE_ENGINEERING_30_FACTORS",
+    "STAGE_4_CROSS_SECTIONAL_TARGET_ZSCORES",
+    "STAGE_5_TEMPORAL_PURGED_SPLITS",
+    "STAGE_6_GPU_MODEL_TRAINING_AND_FORECAST_EVAL",
+    "STAGE_7_SIMILARITY_LOOKBACK_EVALUATION",
+    "STAGE_8_TOP5_RECOMMENDATION_EXPERIMENTS",
+    "STAGE_9_ROBUSTNESS_HORIZONS_AND_TARGETS",
+    "STAGE_10_STRUCTURAL_FEATURE_ABLATION",
+    "STAGE_11_PUBLICATION_ARTIFACTS_GENERATION",
+    "STAGE_12_REPRODUCIBILITY_MANIFEST",
+    "STAGE_13_SCIENTIFIC_VALIDATION_AND_GAP_AUDIT"
+  ],
+  "current_stage": "STAGE_14_FINAL_RESEARCH_AUDIT_AND_MANUSCRIPT_SYNTHESIS",
+  "open_gaps": [],
+  "resolved_gaps": [
+    "GAP-001_RANDOM_TOP5_MONTE_CARLO_BASELINE",
+    "GAP-002_VALIDATION_ALPHA_FRONTIER_SWEEP",
+    "GAP-003_PORTFOLIO_TURNOVER_AND_TRANSACTION_COSTS",
+    "GAP-004_SYNTHETIC_SIMILARITY_VERIFICATION",
+    "GAP-005_NONPARAMETRIC_WILCOXON_AND_BOOTSTRAP",
+    "GAP-006_FEATURE_LEAKAGE_AUDIT_CSV",
+    "GAP-007_DATA_VALIDATION_REPORT"
+  ],
+  "primary_specification": {
+    "horizon": 5,
+    "target": "zscore_fwd_ret_5d",
+    "model": "XGBOOST_GBDT_GPU",
+    "recommendation_lookback": 252,
+    "recommendation_fusion_alpha": 0.5,
+    "k_recommendations": 5
+  },
+  "best_validation_model": "XGBOOST_GBDT_GPU",
+  "test_locked": true,
+  "last_successful_checkpoint": "results/experiments/recommendation_results.parquet",
+  "next_required_action": "Execute scientific validation suite: synthetic similarity test, random recommendation baseline, turnover analysis, validation alpha frontier, and data validation report."
+}

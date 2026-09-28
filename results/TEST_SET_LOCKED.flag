@@ -1,0 +1,15 @@
+================================================================================
+TEST SET LOCK RECORD
+================================================================================
+Timestamp: 2026-09-29T00:36:00
+Lock Status: LOCKED
+Partition Range: 2025-07-08 -> 2026-09-25 (308 trading days; 737,805 samples)
+Purge Embargo: 2025-06-30 -> 2025-07-07 (5 trading days)
+
+LOCK RULES:
+1. No hyperparameter tuning may access or query the test partition.
+2. No feature selection or threshold optimization may access test partition metrics.
+3. No recommendation fusion weight (alpha) tuning may query test set outcomes.
+4. All parameter searches must be conducted strictly on the validation partition (2024-04-08 -> 2025-06-27).
+5. Any subsequent evaluation on this test partition is strictly confirmation/verification.
+================================================================================

@@ -1,0 +1,8 @@
+{
+  "baseline_name": "Random_Top5_MonteCarlo",
+  "total_simulations": 122000,
+  "mean_excess_return": 0.00011457456046753785,
+  "std_excess_return": 0.03434246968281269,
+  "t_statistic": 1.16517839538818,
+  "hit_rate": 0.4727131147540984
+}

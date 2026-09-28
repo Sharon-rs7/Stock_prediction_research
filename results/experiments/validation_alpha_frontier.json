@@ -1,0 +1,79 @@
+{
+  "0.0": {
+    "alpha": 0.0,
+    "mean_excess_return": 0.047154822422854924,
+    "std_excess_return": 0.13420675287390552,
+    "excess_sharpe": 0.3513595098568872,
+    "hit_rate": 0.477258064516129
+  },
+  "0.1": {
+    "alpha": 0.1,
+    "mean_excess_return": 0.011790865304486581,
+    "std_excess_return": 0.06615049256122219,
+    "excess_sharpe": 0.1782430192964015,
+    "hit_rate": 0.4835483870967741
+  },
+  "0.2": {
+    "alpha": 0.2,
+    "mean_excess_return": 0.007873752383115318,
+    "std_excess_return": 0.058140998124577264,
+    "excess_sharpe": 0.13542510935215346,
+    "hit_rate": 0.47774193548387106
+  },
+  "0.3": {
+    "alpha": 0.3,
+    "mean_excess_return": 0.00633969219676211,
+    "std_excess_return": 0.05122192515035945,
+    "excess_sharpe": 0.1237690879532813,
+    "hit_rate": 0.482258064516129
+  },
+  "0.4": {
+    "alpha": 0.4,
+    "mean_excess_return": 0.0034746624955307053,
+    "std_excess_return": 0.043715681917578325,
+    "excess_sharpe": 0.07948318654276004,
+    "hit_rate": 0.4748387096774193
+  },
+  "0.5": {
+    "alpha": 0.5,
+    "mean_excess_return": 0.002911744600861673,
+    "std_excess_return": 0.03946760830726418,
+    "excess_sharpe": 0.07377553360816186,
+    "hit_rate": 0.4791935483870968
+  },
+  "0.6": {
+    "alpha": 0.6,
+    "mean_excess_return": 0.001611205637354277,
+    "std_excess_return": 0.03732802128855943,
+    "excess_sharpe": 0.04316342388643709,
+    "hit_rate": 0.4803225806451613
+  },
+  "0.7": {
+    "alpha": 0.7,
+    "mean_excess_return": 0.001630014952946296,
+    "std_excess_return": 0.036882983767953605,
+    "excess_sharpe": 0.04419421490569351,
+    "hit_rate": 0.4846774193548387
+  },
+  "0.8": {
+    "alpha": 0.8,
+    "mean_excess_return": 0.0014167977530724425,
+    "std_excess_return": 0.035556459476180684,
+    "excess_sharpe": 0.039846412592272604,
+    "hit_rate": 0.48645161290322586
+  },
+  "0.9": {
+    "alpha": 0.9,
+    "mean_excess_return": 0.0002587736258420944,
+    "std_excess_return": 0.033994729267151996,
+    "excess_sharpe": 0.007612166806413453,
+    "hit_rate": 0.477258064516129
+  },
+  "1.0": {
+    "alpha": 1.0,
+    "mean_excess_return": 0.000301171661166032,
+    "std_excess_return": 0.031028567517912827,
+    "excess_sharpe": 0.009706267101421756,
+    "hit_rate": 0.4811290322580645
+  }
+}
