@@ -1,0 +1,31 @@
+{
+  "test_eval_blend": {
+    "num_days": 303,
+    "total_samples": 737805,
+    "mean_rank_ic": 0.008500945758369547,
+    "median_rank_ic": 0.005241337286103378,
+    "std_rank_ic": 0.11273129488473942,
+    "se_rank_ic": 0.006476243677186944,
+    "ic_information_ratio": 0.07540891828637328,
+    "ic_t_statistic": 1.3126352531043217,
+    "ic_p_value": 0.19030253740042816,
+    "ic_skewness": 0.02701090144219641,
+    "pct_positive_ic_days": 0.5148514851485149,
+    "mae": 0.6144201132534861,
+    "rmse": 1.000409024213507,
+    "r2": -0.0012296934375446433,
+    "directional_accuracy": 0.5142063282303589,
+    "always_up_accuracy": 0.47227655003693386
+  },
+  "method_a2": {
+    "mean_excess_return": 0.04597831159344607,
+    "std_excess_return": 0.33777100918105424,
+    "hit_rate": 0.5081967213114754
+  },
+  "method_c2": {
+    "mean_excess_return": 0.005878202228530423,
+    "std_excess_return": 0.09164867577369128,
+    "hit_rate": 0.509016393442623,
+    "t_statistic": 2.2402590693268936
+  }
+}
