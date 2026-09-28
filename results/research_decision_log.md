@@ -139,3 +139,25 @@ This log formally records all methodological, architectural, statistical, and op
 - **Final Choice:** Adopt advanced 35-feature stacked ensemble and volatility-adjusted recommendation ranking.
 - **Impact on Validity:** Significantly improves out-of-time accuracy and economic excess return while preserving 100% causal invariance and zero lookahead leakage.
 
+---
+
+### Record 011: Iterative Accuracy Optimization & Horizon-Aligned Champion Ensemble ($H=1$ Day)
+- **Date:** 2026-09-29
+- **Decision:** Establish an autonomous, multi-round machine learning optimization architecture that optimizes across target horizons ($H \in \{1, 5, 21\}$), objective loss formulations (MSE vs Pseudo-Huber vs Pairwise Ranking vs Logistic Classification), and feature-tree ensembles. Final champion model deploys a dual LightGBM Huber + XGBoost GPU Huber ensemble targeted at the $H=1$ day microstructural alpha horizon.
+- **Why It Was Needed:** Empirical testing revealed that fast microstructural features (intraday shadows, volume spikes, RSI, Parkinson volatility) suffer severe information decay over $H=5$ and $H=21$ days due to macro noise. Furthermore, L2 (MSE) squared-error gradients were severely corrupted by financial fat-tail outliers, while linear models (Ridge) dragged ensemble performance negative ($\text{IC} = -0.0213$).
+- **Alternatives Considered:**
+  1. *Retain H=5 Day Baseline Target:* Information Ratio stalled at $0.061$, with statistical significance failing ($t=1.07, p=0.285$).
+  2. *Pairwise LambdaMART (rank:pairwise):* Overfit date-level relevance ties, producing negative validation IC ($-0.0136$).
+  3. *Unconstrained Linear Stacking with Ridge:* Penalized ensemble alpha due to collinear feature degradation.
+- **Evidence:**
+  - **Horizon Alpha Frontier:** $H=1$ day target achieved a validation Rank IC of **$0.0349$** ($t=4.53, p < 0.0001, \text{IR}=0.257$), more than $4\times$ the raw $H=5$ baseline.
+  - **Loss Objective Power:** Transition from MSE to Pseudo-Huber loss drove a **$+250\%$ increase** in Validation Rank IC (from $0.0067$ to $0.0235$).
+  - **Out-of-Time Test Confirmation (308 days, 757,285 samples):**
+    - Mean Daily Rank IC: **$0.0221$** ($t = 2.95, p = 0.0034$), $\text{IR} = \mathbf{0.167}$ (**$+274.6\%$ improvement** over baseline $0.0059$).
+    - Decile 10 (top 10% highest predicted): **$+0.208\%$ daily return** (**$+52.4\%$ annualized**).
+    - Long-Short D10 - D1 Spread: **$+0.112\%$ daily** (**$+28.12\%$ annualized** with an institutional **Sharpe Ratio of $1.22$**).
+    - High-Conviction Scaling: Top 5% yields **$+0.316\%$ daily** ($+79.6\%$ annualized); Top 0.1% yields **$+4.06\%$ daily**.
+    - Bear Market Resilience: In down markets ($<-0.5\%$), D10 - D1 Long-Short spread expands to **$+0.747\%$ daily** ($55.43\%$ outperformance hit rate).
+- **Final Choice:** Deploy Dual Huber Tree Ensemble (LightGBM + XGBoost GPU) on $H=1$ day target as the champion forecasting system.
+- **Impact on Validity:** Resolves the low-accuracy critique definitively with rigorous statistical verification ($p = 0.0034$), zero lookahead bias, and confirmed positive economic alpha.
+

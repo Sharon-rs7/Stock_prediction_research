@@ -1,0 +1,139 @@
+{
+  "mean_rank_ic": 0.022120257905738062,
+  "long_short_annualized_return": 0.5245751309556291,
+  "long_short_sharpe": 1.2221212220239246,
+  "t_statistic": 1.3576708996037987,
+  "p_value": 0.175555587037935,
+  "decile_stats": [
+    {
+      "decile": 1,
+      "daily_mean_return_pct": 0.09658060612586539,
+      "annualized_return_pct": 24.33831274371808,
+      "outperformance_hit_rate_pct": 46.606662801117494,
+      "positive_day_win_rate_pct": 46.51705234304992
+    },
+    {
+      "decile": 2,
+      "daily_mean_return_pct": 0.12227603352434836,
+      "annualized_return_pct": 30.813560448135785,
+      "outperformance_hit_rate_pct": 48.01317931007106,
+      "positive_day_win_rate_pct": 48.73565956095431
+    },
+    {
+      "decile": 3,
+      "daily_mean_return_pct": 0.0979779287224453,
+      "annualized_return_pct": 24.690438038056218,
+      "outperformance_hit_rate_pct": 48.19329502925518,
+      "positive_day_win_rate_pct": 49.11970902957145
+    },
+    {
+      "decile": 4,
+      "daily_mean_return_pct": 0.07407870183879067,
+      "annualized_return_pct": 18.667832863375246,
+      "outperformance_hit_rate_pct": 47.97745226469771,
+      "positive_day_win_rate_pct": 49.08234422346605
+    },
+    {
+      "decile": 5,
+      "daily_mean_return_pct": 0.06463157080247044,
+      "annualized_return_pct": 16.28715584222255,
+      "outperformance_hit_rate_pct": 48.44367719150282,
+      "positive_day_win_rate_pct": 49.79969427020189
+    },
+    {
+      "decile": 6,
+      "daily_mean_return_pct": 0.049120046215414624,
+      "annualized_return_pct": 12.378251646284486,
+      "outperformance_hit_rate_pct": 48.10315853545578,
+      "positive_day_win_rate_pct": 49.82467283289005
+    },
+    {
+      "decile": 7,
+      "daily_mean_return_pct": 0.06582650228672209,
+      "annualized_return_pct": 16.588278576253966,
+      "outperformance_hit_rate_pct": 48.70390218728911,
+      "positive_day_win_rate_pct": 50.66227356330965
+    },
+    {
+      "decile": 8,
+      "daily_mean_return_pct": 0.05560630548995625,
+      "annualized_return_pct": 14.012788983468976,
+      "outperformance_hit_rate_pct": 48.58468188287386,
+      "positive_day_win_rate_pct": 50.82757893627116
+    },
+    {
+      "decile": 9,
+      "daily_mean_return_pct": 0.08163270296036018,
+      "annualized_return_pct": 20.571441146010766,
+      "outperformance_hit_rate_pct": 49.40388763182618,
+      "positive_day_win_rate_pct": 51.0658568536382
+    },
+    {
+      "decile": 10,
+      "daily_mean_return_pct": 0.20816473450620204,
+      "annualized_return_pct": 52.457513095562916,
+      "outperformance_hit_rate_pct": 50.20689473406779,
+      "positive_day_win_rate_pct": 50.75905329186653
+    }
+  ],
+  "tier_stats": [
+    {
+      "conviction_tier": "Decile 10 (Top 10%)",
+      "samples": 75884,
+      "daily_mean_return_pct": 0.20816473450620204,
+      "annualized_return_pct": 52.457513095562916,
+      "outperformance_hit_rate_pct": 50.20689473406779,
+      "positive_win_rate_pct": 50.75905329186653
+    },
+    {
+      "conviction_tier": "Vigintile 20 (Top 5%)",
+      "samples": 37942,
+      "daily_mean_return_pct": 0.31576106504802054,
+      "annualized_return_pct": 79.57178839210118,
+      "outperformance_hit_rate_pct": 51.0067998524063,
+      "positive_win_rate_pct": 50.74851088503506
+    },
+    {
+      "conviction_tier": "Centile 100 (Top 1%)",
+      "samples": 7775,
+      "daily_mean_return_pct": 0.8215214145687657,
+      "annualized_return_pct": 207.02339647132894,
+      "outperformance_hit_rate_pct": 51.331189710610936,
+      "positive_win_rate_pct": 48.60450160771704
+    },
+    {
+      "conviction_tier": "Apex Tier (Top 0.1%)",
+      "samples": 933,
+      "daily_mean_return_pct": 4.064829012676021,
+      "annualized_return_pct": 1024.3369111943573,
+      "outperformance_hit_rate_pct": 53.054662379421224,
+      "positive_win_rate_pct": 48.87459807073955
+    }
+  ],
+  "regime_stats": [
+    {
+      "regime": "Bull Days (Market > +0.5%)",
+      "trading_days": 97,
+      "d10_return_pct": 1.3779615100664955,
+      "d1_return_pct": 1.7294555454772573,
+      "long_short_spread_pct": -0.35149403541076196,
+      "d10_hit_rate_pct": 45.411526111205006
+    },
+    {
+      "regime": "Flat Days (-0.5% to +0.5%)",
+      "trading_days": 128,
+      "d10_return_pct": 0.09703551759064233,
+      "d1_return_pct": 0.06151410748996397,
+      "long_short_spread_pct": 0.035521410100678365,
+      "d10_hit_rate_pct": 50.32978995901639
+    },
+    {
+      "regime": "Bear Days (Market < -0.5%)",
+      "trading_days": 86,
+      "d10_return_pct": -0.9458555848444585,
+      "d1_return_pct": -1.6929584321495956,
+      "long_short_spread_pct": 0.747102847305137,
+      "d10_hit_rate_pct": 55.432710636675566
+    }
+  ]
+}
