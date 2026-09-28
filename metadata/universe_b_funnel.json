@@ -1,0 +1,11 @@
+{
+  "total_raw_files": 6708,
+  "gate1_common_candidate": 6051,
+  "gate2_data_quality": 6039,
+  "gate3_zero_vol_le_1pct": 5053,
+  "synchronization_1759_rows": 3483,
+  "liquidity_median_vol_ge_100k": 2435,
+  "universe_b_count": 2435,
+  "target_expected_count": 2435,
+  "is_exact_match": true
+}

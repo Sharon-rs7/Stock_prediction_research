@@ -1,0 +1,56 @@
+{
+  "project_name": "Stock_Forecast_Similarity_Recommendation",
+  "dataset": {
+    "repo_id": "AmirTrader/YahooFinance",
+    "commit_sha": "c3c01ff2fc62e02c338d2e03bdfd71016da09701",
+    "expected_files": 6708,
+    "universe": "UNIVERSE_B",
+    "target_tickers": 2435,
+    "date_start": "2019-09-26",
+    "date_end": "2026-09-25",
+    "sync_rows": 1759
+  },
+  "targets": {
+    "primary_horizon": 5,
+    "primary_type": "cross_sectional_zscore",
+    "secondary_horizons": [1, 21],
+    "secondary_types": ["raw_return", "excess_return"]
+  },
+  "splits": {
+    "train_end": "2024-03-28",
+    "purge_gap_1": 5,
+    "val_end": "2025-06-27",
+    "purge_gap_2": 5,
+    "test_end": "2026-09-25"
+  },
+  "models": {
+    "ridge": {
+      "alpha": 100.0,
+      "random_state": 42
+    },
+    "random_forest": {
+      "n_estimators": 100,
+      "max_depth": 8,
+      "min_samples_leaf": 100,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "lightgbm": {
+      "n_estimators": 500,
+      "learning_rate": 0.03,
+      "num_leaves": 31,
+      "early_stopping_rounds": 30,
+      "random_state": 42,
+      "n_jobs": -1
+    }
+  },
+  "similarity": {
+    "lookbacks": [252, 504],
+    "metrics": ["pearson", "cosine", "trajectory"]
+  },
+  "recommendation": {
+    "k": 5,
+    "alpha_combined": 0.5,
+    "benchmark": "equal_weighted_cross_sectional_universe"
+  }
+}

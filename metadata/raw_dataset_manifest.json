@@ -1,0 +1,10 @@
+{
+  "dataset_id": "AmirTrader/YahooFinance",
+  "commit_sha": "c3c01ff2fc62e02c338d2e03bdfd71016da09701",
+  "download_timestamp": "2026-09-29T00:12:01.874531",
+  "verified_raw_count_expected": 6708,
+  "verified_raw_count_actual": 6708,
+  "exact_match": true,
+  "duration_seconds": 13.642925024032593,
+  "missing_tickers": []
+}

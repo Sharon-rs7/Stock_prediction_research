@@ -1,0 +1,41 @@
+{
+  "H": 5,
+  "total_calendar_days": 1759,
+  "overall_start": "2019-09-26",
+  "overall_end": "2026-09-25",
+  "train": {
+    "start_date": "2019-09-26",
+    "end_date": "2024-03-28",
+    "num_days": 1134,
+    "start_idx": 0,
+    "end_idx": 1133
+  },
+  "purge_1": {
+    "start_date": "2024-04-01",
+    "end_date": "2024-04-05",
+    "num_days": 5,
+    "start_idx": 1134,
+    "end_idx": 1138
+  },
+  "validation": {
+    "start_date": "2024-04-08",
+    "end_date": "2025-06-27",
+    "num_days": 307,
+    "start_idx": 1139,
+    "end_idx": 1445
+  },
+  "purge_2": {
+    "start_date": "2025-06-30",
+    "end_date": "2025-07-07",
+    "num_days": 5,
+    "start_idx": 1446,
+    "end_idx": 1450
+  },
+  "test": {
+    "start_date": "2025-07-08",
+    "end_date": "2026-09-25",
+    "num_days": 308,
+    "start_idx": 1451,
+    "end_idx": 1758
+  }
+}

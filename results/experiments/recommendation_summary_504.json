@@ -1,0 +1,40 @@
+{
+  "Prediction_Only": {
+    "mean_forward_return": 0.02085589495823952,
+    "median_forward_return": -0.007232131471057082,
+    "mean_excess_return": 0.01663216137058168,
+    "median_excess_return": -0.009139200596516774,
+    "std_excess_return": 0.12030482374745603,
+    "se_excess_return": 0.0034443170843858413,
+    "t_statistic": 4.828856540942413,
+    "mean_hit_rate": 0.4491803278688525,
+    "total_evaluations": 1220
+  },
+  "Similarity_Only": {
+    "mean_forward_return": 0.005160019501414085,
+    "median_forward_return": 0.003990811821156657,
+    "mean_excess_return": 0.0009362859137562461,
+    "median_excess_return": -0.0015935073660975781,
+    "std_excess_return": 0.03848220017849643,
+    "se_excess_return": 0.001101742186146995,
+    "t_statistic": 0.8498153446199086,
+    "mean_hit_rate": 0.48704918032786887,
+    "total_evaluations": 1220
+  },
+  "Combined_Fusion": {
+    "mean_forward_return": 0.0058892522694556455,
+    "median_forward_return": 0.0029229009204177403,
+    "mean_excess_return": 0.0016655186817978059,
+    "median_excess_return": -0.00028077327705459607,
+    "std_excess_return": 0.03849834182625142,
+    "se_excess_return": 0.0011022043201778745,
+    "t_statistic": 1.5110660887884544,
+    "mean_hit_rate": 0.5006557377049181,
+    "total_evaluations": 1220
+  },
+  "Universe_Benchmark": {
+    "mean_forward_return": 0.004223733587657839,
+    "median_forward_return": 0.0030762585764513664,
+    "total_evaluations": 1220
+  }
+}

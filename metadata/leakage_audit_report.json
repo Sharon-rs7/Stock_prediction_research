@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-09-29T00:31:48.606697",
+  "all_checks_passed": true,
+  "num_checks": 10,
+  "results": {
+    "check_1_feature_no_lookahead": {
+      "passed": true,
+      "details": "Max difference at <= t when t+1 perturbed: 0.0"
+    },
+    "check_2_target_definition": {
+      "passed": true,
+      "details": "y(i,t,H) strictly matches (AdjClose_{t+H} - AdjClose_t) / AdjClose_t"
+    },
+    "check_10_target_cs_date_isolation": {
+      "passed": true,
+      "details": "Cross-sectional transformation strictly grouped by date with zero cross-date leakage."
+    },
+    "check_3_scaler_fit_on_train_only": {
+      "passed": true,
+      "details": "StandardScaler / RobustScaler fit strictly on Train split (<= 2024-03-28)."
+    },
+    "check_4_imputation_fit_on_train_only": {
+      "passed": true,
+      "details": "Feature medians computed strictly on Train split."
+    },
+    "check_5_feature_selection_train_only": {
+      "passed": true,
+      "details": "Pre-specified fixed 30 features; no retrospective feature pruning on test set."
+    },
+    "check_6_hyperparameters_train_val_only": {
+      "passed": true,
+      "details": "Model selection and early stopping use strictly validation set."
+    },
+    "check_7_similarity_causal_lookback": {
+      "passed": true,
+      "details": "Similarity computed over sliding historical window [t - L + 1, t] without forward data."
+    },
+    "check_8_recommendation_information_set": {
+      "passed": true,
+      "details": "Recommendation ranking rule uses only scores available at time t."
+    },
+    "check_9_test_data_untouched": {
+      "passed": true,
+      "details": "Out-of-time test partition (2025-06-30 to 2026-09-25) untouched during training."
+    }
+  }
+}
