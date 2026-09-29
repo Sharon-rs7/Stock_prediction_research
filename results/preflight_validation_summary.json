@@ -1,0 +1,37 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checks_total": 13,
+  "checks_passed": 13,
+  "results": {
+    "1_data_loading": "PASS",
+    "2_date_sorting": "PASS",
+    "3_duplicate_handling": "PASS",
+    "4_feature_calculation": "PASS",
+    "5_h5_target": "PASS",
+    "6_cross_sectional_zscore": "PASS",
+    "7_split_boundaries": "PASS",
+    "8_purge_gap": "PASS",
+    "9_scaling_isolation": "PASS",
+    "10_model_io": "PASS",
+    "11_similarity_self_exclusion": "PASS",
+    "12_recommendation_logic": "PASS",
+    "13_evaluation_metrics": "PASS"
+  },
+  "sample_tickers_tested": [
+    "A",
+    "AA",
+    "AAL",
+    "AAMI",
+    "AAOI",
+    "AAON",
+    "AAP",
+    "AAPL",
+    "AAT",
+    "AB",
+    "ABAT",
+    "ABBV",
+    "ABCB",
+    "ABEO",
+    "ABEV"
+  ]
+}
