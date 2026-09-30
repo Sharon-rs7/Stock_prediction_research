@@ -1,0 +1,93 @@
+{
+  "n_tickers": 2435,
+  "n_sub5": 213,
+  "pct_sub5": 8.747433264887064,
+  "mean_daily_turnover_pct": 67.19725013220518,
+  "gross_annualized_return_pct": 45.23069009773425,
+  "mkt_annualized_return_pct": 23.087285643036406,
+  "ret_1d_importance_pct": 4.4186046511627906,
+  "top_features": [
+    {
+      "feature": "overnight_gap",
+      "importance": 494,
+      "relative_importance_pct": 9.573643410852712
+    },
+    {
+      "feature": "bar_pressure",
+      "importance": 393,
+      "relative_importance_pct": 7.616279069767441
+    },
+    {
+      "feature": "log_turnover",
+      "importance": 388,
+      "relative_importance_pct": 7.519379844961241
+    },
+    {
+      "feature": "ret_5d",
+      "importance": 338,
+      "relative_importance_pct": 6.550387596899225
+    },
+    {
+      "feature": "lower_shadow",
+      "importance": 285,
+      "relative_importance_pct": 5.523255813953488
+    },
+    {
+      "feature": "upper_shadow",
+      "importance": 268,
+      "relative_importance_pct": 5.1937984496124034
+    },
+    {
+      "feature": "dist_sma_200",
+      "importance": 237,
+      "relative_importance_pct": 4.593023255813954
+    },
+    {
+      "feature": "ret_1d",
+      "importance": 228,
+      "relative_importance_pct": 4.4186046511627906
+    },
+    {
+      "feature": "amihud_illiq_21d",
+      "importance": 217,
+      "relative_importance_pct": 4.205426356589148
+    },
+    {
+      "feature": "turnover_vol_21d",
+      "importance": 193,
+      "relative_importance_pct": 3.74031007751938
+    }
+  ],
+  "transaction_cost_table": [
+    {
+      "round_trip_cost_bps": 5,
+      "annual_drag_pct": 8.466853516657851,
+      "annualized_net_return_pct": 36.76383658107639,
+      "annualized_net_excess_pct": 13.676550938039986
+    },
+    {
+      "round_trip_cost_bps": 10,
+      "annual_drag_pct": 16.933707033315702,
+      "annualized_net_return_pct": 28.29698306441854,
+      "annualized_net_excess_pct": 5.209697421382134
+    },
+    {
+      "round_trip_cost_bps": 15,
+      "annual_drag_pct": 25.400560549973555,
+      "annualized_net_return_pct": 19.83012954776069,
+      "annualized_net_excess_pct": -3.257156095275715
+    },
+    {
+      "round_trip_cost_bps": 20,
+      "annual_drag_pct": 33.867414066631405,
+      "annualized_net_return_pct": 11.36327603110284,
+      "annualized_net_excess_pct": -11.724009611933567
+    },
+    {
+      "round_trip_cost_bps": 30,
+      "annual_drag_pct": 50.80112109994711,
+      "annualized_net_return_pct": -5.570431002212863,
+      "annualized_net_excess_pct": -28.65771664524927
+    }
+  ]
+}
