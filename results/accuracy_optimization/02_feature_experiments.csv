@@ -1,0 +1,4 @@
+feature_set,feature_count,best_model,val_dir_accuracy,val_balanced_accuracy,val_up_precision,val_roc_auc,val_rank_ic,val_rank_ic_t
+Set_1_Current_49,49,LightGBM_Huber_Regressor,0.5284,0.52,0.5081,0.5248,0.0433,4.37
+Set_2_Expanded_77,77,LightGBM_Huber_Regressor,0.5272,0.5169,0.5069,0.5212,0.0422,4.6
+Set_3_Selected_42,42,LightGBM_Huber_Regressor,0.5224,0.5138,0.4986,0.5204,0.0443,4.56

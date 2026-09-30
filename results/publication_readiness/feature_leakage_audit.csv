@@ -1,0 +1,31 @@
+feature,category,lookback_window,formula,inputs_used,uses_future_data,leakage_status,perturbation_delta,evidence
+ret_1d,Momentum,1d,(C_t - C_{t-1}) / C_{t-1},C_t C_{t-1},False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+ret_5d,Momentum,5d,(C_t - C_{t-5}) / C_{t-5},C_t C_{t-5},False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+ret_10d,Momentum,10d,(C_t - C_{t-10}) / C_{t-10},C_t C_{t-10},False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+ret_21d,Momentum,21d,(C_t - C_{t-21}) / C_{t-21},C_t C_{t-21},False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+ret_63d,Momentum,63d,(C_t - C_{t-63}) / C_{t-63},C_t C_{t-63},False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+vol_5d,Volatility,5d,std(ret_1d 5d),ret_1d[t-4:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+vol_21d,Volatility,21d,std(ret_1d 21d),ret_1d[t-20:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+vol_63d,Volatility,63d,std(ret_1d 63d),ret_1d[t-62:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+parkinson_vol_21d,Volatility,21d,sqrt(1/(4*ln2*21)*sum(ln(H/L)^2)),H L[t-20:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+natr_14d,Volatility,14d,ATR_14 / C_t,H L C[t-13:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+ret_skew_21d,Volatility,21d,skew(ret_1d 21d),ret_1d[t-20:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+dist_sma_20,Trend,20d,(C_t - SMA_20) / SMA_20,C[t-19:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+dist_sma_50,Trend,50d,(C_t - SMA_50) / SMA_50,C[t-49:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+dist_sma_200,Trend,200d,(C_t - SMA_200) / SMA_200,C[t-199:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+rsi_14d,Trend,14d,100 - (100 / (1 + RS_14)),C[t-13:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+macd_diff,Trend,26d,EMA_12 - EMA_26,C[t-25:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+bollinger_pct_b,Trend,20d,(C_t - Lower) / (Upper - Lower),C[t-19:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+vol_ratio_5d,Volume,5d,V_t / mean(V 5d),V[t-4:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+vol_ratio_21d,Volume,21d,V_t / mean(V 21d),V[t-20:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+log_turnover,Volume,1d,ln(C_t * V_t + 1),C_t V_t,False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+turnover_vol_21d,Volume,21d,std(ln(C*V) 21d),C V[t-20:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+amihud_illiq_21d,Volume,21d,mean(|ret_1d| / (C*V) 21d),ret_1d C V[t-20:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+obv_slope_10d,Volume,10d,slope(OBV 10d),C V[t-9:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+hl_spread,Bar Geometry,1d,(H_t - L_t) / C_t,H_t L_t C_t,False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+oc_return,Bar Geometry,1d,(C_t - O_t) / O_t,C_t O_t,False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+overnight_gap,Bar Geometry,1d,(O_t - C_{t-1}) / C_{t-1},O_t C_{t-1},False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+upper_shadow,Bar Geometry,1d,(H_t - max(O_t C_t)) / C_t,H_t O_t C_t,False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+lower_shadow,Bar Geometry,1d,(min(O_t C_t) - L_t) / C_t,L_t O_t C_t,False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+bar_pressure,Bar Geometry,1d,(C_t - L_t) / (H_t - L_t + eps),C_t L_t H_t,False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv
+roll_spread_21d,Bar Geometry,21d,2*sqrt(max(0 -cov(dC_t dC_{t-1}))),C[t-21:t],False,PASS,0.0,Strict perturbation invariance tested in results/feature_leakage_audit.csv

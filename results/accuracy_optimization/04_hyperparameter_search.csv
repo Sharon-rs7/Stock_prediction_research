@@ -1,0 +1,15 @@
+config_name,architecture_type,val_dir_accuracy,window_1_acc,window_2_acc,window_3_acc,stability_std,balanced_accuracy,up_precision,f1_score,rank_ic,rank_ic_t,notes
+HP_01_LGBM_Huber_Baseline,lgbm_reg,0.5284,0.5284,0.5213,0.5355,0.0058,0.52,0.5081,0.4072,0.0433,4.37,Single model configuration
+HP_02_LGBM_Huber_Deep_Reg,lgbm_reg,0.5274,0.5295,0.5238,0.5289,0.0026,0.5178,0.507,0.3865,0.049,4.94,Single model configuration
+HP_03_LGBM_Huber_Shallow,lgbm_reg,0.528,0.5254,0.5197,0.5388,0.008,0.5185,0.508,0.3876,0.0398,4.07,Single model configuration
+HP_04_LGBM_Huber_Tail_Robust,lgbm_reg,0.5291,0.5273,0.5228,0.5372,0.006,0.52,0.5096,0.397,0.0484,4.92,Single model configuration
+HP_05_LGBM_Huber_Slow_Learn,lgbm_reg,0.5303,0.5299,0.519,0.542,0.0094,0.5207,0.5121,0.3891,0.0433,4.32,Single model configuration
+HP_06_LGBM_Binary_Classifier,lgbm_cls,0.5284,0.5297,0.5287,0.5269,0.0012,0.5164,0.5105,0.3434,0.0505,5.47,Single model configuration
+HP_07_XGB_Huber_Baseline,xgb_reg,0.5305,0.5301,0.5269,0.5346,0.0032,0.5211,0.5122,0.3928,0.0522,5.63,Single model configuration
+HP_08_XGB_Huber_Shallow,xgb_reg,0.5282,0.5282,0.5201,0.5362,0.0066,0.517,0.5095,0.3583,0.0421,4.35,Single model configuration
+HP_09_XGB_Huber_Deep_Reg,xgb_reg,0.5354,0.5323,0.528,0.5456,0.0075,0.5257,0.5207,0.3951,0.0569,6.01,Single model configuration
+HP_10_LGBM_Weighted_Classifier,lgbm_cls,0.5216,0.5151,0.5174,0.5322,0.0076,0.5193,0.4981,0.4835,0.0492,5.43,Single model configuration
+ENS_01_Dual_Huber_Rank_Avg (50% LGBM + 50% XGB),ensemble_blend,0.5148,0.525,0.5053,0.5141,0.0081,0.5148,0.4915,0.5033,0.0483,4.99,Multi-model ensemble on validation partition
+ENS_02_Dual_Huber_Score_Avg,ensemble_blend,0.5296,0.5295,0.5237,0.5357,0.0049,0.5205,0.5105,0.3966,0.049,5.07,Multi-model ensemble on validation partition
+ENS_03_Tri_Model_Blend (45% LGB + 45% XGB + 10% LR),ensemble_blend,0.5149,0.5243,0.5058,0.5146,0.0076,0.5149,0.4916,0.5033,0.0486,5.06,Multi-model ensemble on validation partition
+ENS_04_Classification_Regression_Hybrid (50% Reg + 50% Cls),ensemble_blend,0.515,0.5239,0.5065,0.5146,0.0071,0.5151,0.4917,0.5035,0.0479,4.97,Multi-model ensemble on validation partition

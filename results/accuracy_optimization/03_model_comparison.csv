@@ -1,0 +1,13 @@
+feature_set,feature_count,model_architecture,val_sample_size,dir_accuracy,balanced_accuracy,up_precision,up_recall,f1_score,roc_auc,pr_auc,brier_score,rank_ic,rank_ic_t
+Set_1_Current_49,49,Logistic_Regression,747545,0.5186,0.5023,0.4843,0.153,0.2325,0.5123,0.4844,0.24951,0.0256,4.32
+Set_1_Current_49,49,LightGBM_Huber_Regressor,747545,0.5284,0.52,0.5081,0.3398,0.4072,0.5248,0.4975,0.24908,0.0433,4.37
+Set_1_Current_49,49,LightGBM_Binary_Classifier,747545,0.5284,0.5164,0.5105,0.2587,0.3434,0.5294,0.5028,0.2488,0.0505,5.47
+Set_1_Current_49,49,XGBoost_Huber_Regressor,747545,0.5305,0.5211,0.5122,0.3185,0.3928,0.5284,0.5005,0.24933,0.0522,5.63
+Set_2_Expanded_77,77,Logistic_Regression,747545,0.5158,0.4997,0.4757,0.1533,0.2319,0.5088,0.4798,0.24962,0.0282,4.62
+Set_2_Expanded_77,77,LightGBM_Huber_Regressor,747545,0.5272,0.5169,0.5069,0.2971,0.3746,0.5212,0.4917,0.24921,0.0422,4.6
+Set_2_Expanded_77,77,LightGBM_Binary_Classifier,747545,0.5239,0.5112,0.5014,0.237,0.3219,0.5228,0.4997,0.24906,0.0413,4.71
+Set_2_Expanded_77,77,XGBoost_Huber_Regressor,747545,0.5254,0.5156,0.5036,0.305,0.3799,0.5205,0.4935,0.24948,0.0438,4.75
+Set_3_Selected_42,42,Logistic_Regression,747545,0.5173,0.5003,0.4779,0.137,0.213,0.5108,0.482,0.24952,0.0255,3.8
+Set_3_Selected_42,42,LightGBM_Huber_Regressor,747545,0.5224,0.5138,0.4986,0.3305,0.3975,0.5204,0.4946,0.24918,0.0443,4.56
+Set_3_Selected_42,42,LightGBM_Binary_Classifier,747545,0.5254,0.513,0.5044,0.2476,0.3322,0.5221,0.4975,0.24911,0.0419,4.49
+Set_3_Selected_42,42,XGBoost_Huber_Regressor,747545,0.5203,0.5116,0.4952,0.3246,0.3921,0.5184,0.4953,0.24945,0.0384,4.13

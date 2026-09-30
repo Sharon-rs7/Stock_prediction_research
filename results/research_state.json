@@ -32,9 +32,12 @@
     "STAGE_10_STRUCTURAL_FEATURE_ABLATION",
     "STAGE_11_PUBLICATION_ARTIFACTS_GENERATION",
     "STAGE_12_REPRODUCIBILITY_MANIFEST",
-    "STAGE_13_SCIENTIFIC_VALIDATION_AND_GAP_AUDIT"
+    "STAGE_13_SCIENTIFIC_VALIDATION_AND_GAP_AUDIT",
+    "STAGE_14_FINAL_RESEARCH_AUDIT_AND_MANUSCRIPT_SYNTHESIS",
+    "STAGE_15_FINAL_ENHANCED_MARKET_AWARE_ARCHITECTURE",
+    "STAGE_16_FINAL_MANUSCRIPT_FROZEN_FOR_SUBMISSION"
   ],
-  "current_stage": "STAGE_14_FINAL_RESEARCH_AUDIT_AND_MANUSCRIPT_SYNTHESIS",
+  "current_stage": "STAGE_17_ACCURACY_BOUNDS_AND_REGISTRY_SYNCHRONIZED",
   "open_gaps": [],
   "resolved_gaps": [
     "GAP-001_RANDOM_TOP5_MONTE_CARLO_BASELINE",
@@ -43,18 +46,61 @@
     "GAP-004_SYNTHETIC_SIMILARITY_VERIFICATION",
     "GAP-005_NONPARAMETRIC_WILCOXON_AND_BOOTSTRAP",
     "GAP-006_FEATURE_LEAKAGE_AUDIT_CSV",
-    "GAP-007_DATA_VALIDATION_REPORT"
+    "GAP-007_DATA_VALIDATION_REPORT",
+    "GAP-008_MARKET_AWARE_FEATURE_ABLATION_LEVEL1_TO_LEVEL4",
+    "GAP-009_PLATT_PROBABILITY_CALIBRATION_STOCK_SPECIFIC",
+    "GAP-010_SELECTIVE_COVERAGE_11TIERS_ACCURACY_PRECISION"
   ],
   "primary_specification": {
     "horizon": 5,
     "target": "zscore_fwd_ret_5d",
-    "model": "XGBOOST_GBDT_GPU",
+    "model": "LIGHTGBM_HUBER_LEVEL2_MARKET_AWARE",
+    "features_count": 49,
+    "feature_breakdown": {
+      "level_1_baseline_single_stock": 30,
+      "level_2_market_context_macro": 11,
+      "level_2_relative_stock_differences": 4,
+      "level_2_cross_sectional_ranks": 4
+    },
     "recommendation_lookback": 252,
     "recommendation_fusion_alpha": 0.5,
-    "k_recommendations": 5
+    "k_recommendations": 5,
+    "recommendation_evaluation_windows": 1220,
+    "recommendation_total_portfolios": 6100
   },
-  "best_validation_model": "XGBOOST_GBDT_GPU",
+  "confirmatory_results": {
+    "level_1_test_rank_ic": 0.0084,
+    "level_2_test_rank_ic": 0.0160,
+    "empirical_relative_lift": "+91.1%",
+    "paired_newey_west_hac_t": 1.3027,
+    "paired_newey_west_hac_p": 0.1927,
+    "bootstrap_95_ci": [-0.00032, 0.01559],
+    "unconditional_directional_accuracy": 0.5372,
+    "selective_25pct_directional_accuracy": 0.5446,
+    "selective_25pct_up_precision": 0.6082,
+    "selective_10pct_directional_accuracy": 0.5689,
+    "selective_10pct_up_precision": 0.6568,
+    "method_c_variance_reduction_vs_a": 0.880,
+    "method_c_gross_excess": 0.00113,
+    "method_c_net_excess_5bps": 0.00071,
+    "method_c_net_excess_10bps": 0.00028,
+    "method_c_net_excess_15bps": -0.00014
+  },
+  "accuracy_optimization_bounds": {
+    "branch": "results/accuracy_optimization/",
+    "champion_model": "HP_09_XGB_Huber_Deep_Reg",
+    "unconditional_test_directional_accuracy": 0.5160,
+    "unconditional_95_bootstrap_ci": [0.5096, 0.5221],
+    "balanced_accuracy": 0.5017,
+    "max_selective_directional_accuracy": 0.5672,
+    "max_selective_up_precision": 0.6667,
+    "max_up_down_return_spread": 0.1208,
+    "unconditional_60pct_achieved": false,
+    "scientific_verdict": "Unconditional >=60% accuracy on daily equities is bounded by market microstructural noise (>98% idiosyncratic variance)."
+  },
+  "best_validation_model": "LIGHTGBM_HUBER_LEVEL2_MARKET_AWARE",
   "test_locked": true,
-  "last_successful_checkpoint": "results/experiments/recommendation_results.parquet",
-  "next_required_action": "Execute scientific validation suite: synthetic similarity test, random recommendation baseline, turnover analysis, validation alpha frontier, and data validation report."
+  "last_successful_checkpoint": "results/accuracy_optimization/10_experiment_report.md",
+  "next_required_action": "Manuscript and artifacts frozen for peer review / publication."
 }
+

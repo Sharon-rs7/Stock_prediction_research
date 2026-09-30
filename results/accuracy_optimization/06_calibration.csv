@@ -1,0 +1,5 @@
+calibration_method,val_sample_size,brier_score,log_loss,roc_auc,pr_auc,ece,cal_slope,cal_intercept
+Raw_Sigmoid_ZScore,747545,0.24926,0.6917,0.5326,0.5056,0.02568,0.7649,0.0239
+Platt_Logistic_Scaling,747545,0.24893,0.691,0.5326,0.5056,0.00642,0.5164,0.1827
+Isotonic_Regression,747545,0.24834,0.6898,0.5347,0.5031,0.00297,0.571,0.1446
+Raw_LightGBM_Classifier_Prob,747545,0.2488,0.6907,0.5294,0.5028,0.00876,1.337,-0.1746

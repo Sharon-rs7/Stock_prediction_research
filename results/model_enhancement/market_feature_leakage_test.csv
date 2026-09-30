@@ -1,0 +1,17 @@
+feature,evaluation_date,future_perturbation,before_perturbation,after_perturbation,absolute_difference,status
+mkt_ret_1d,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.001749542116425,0.001749542116425,0.0,PASS
+mkt_ret_5d,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.003212612992168,0.003212612992168,0.0,PASS
+mkt_ret_21d,2020-02-20,+100% price / +1000% vol on t+1..t+5,-0.0045519789402216,-0.0045519789402216,0.0,PASS
+mkt_dispersion_1d,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.0294250803267325,0.0294250803267325,0.0,PASS
+mkt_mean_vol_21d,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.0232481655386335,0.0232481655386335,0.0,PASS
+mkt_breadth_sma50,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.5581108829568788,0.5581108829568788,0.0,PASS
+mkt_breadth_sma200,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.0,0.0,0.0,PASS
+mkt_ad_ratio,2020-02-20,+100% price / +1000% vol on t+1..t+5,1.2640075973409306,1.2640075973409306,0.0,PASS
+median_ret_5d,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.0017467653434299,0.0017467653434299,0.0,PASS
+median_ret_21d,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.0022506980789393,0.0022506980789393,0.0,PASS
+median_vol_21d,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.0186852330792785,0.0186852330792785,0.0,PASS
+median_vol_ratio_5d,2020-02-20,+100% price / +1000% vol on t+1..t+5,1.018821069141222,1.018821069141222,0.0,PASS
+mkt_vol_21d,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.0089555196096799,0.0089555196096799,0.0,PASS
+mkt_vol_63d,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.0063864089780184,0.0063864089780184,0.0,PASS
+mkt_momentum_regime,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.0,0.0,0.0,PASS
+mkt_vol_regime,2020-02-20,+100% price / +1000% vol on t+1..t+5,0.0,0.0,0.0,PASS

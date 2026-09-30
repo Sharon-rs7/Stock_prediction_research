@@ -1,0 +1,11 @@
+regime_name,sample_size,dir_accuracy,balanced_accuracy,up_precision,f1_score,rank_ic,rank_ic_t,notes
+Full_Validation_Sample,747545,0.5272,0.5081,0.5223,0.1629,0.0569,6.01,Validation partition robustness subset
+Bull_Days (Mkt_Ret > +0.5%),231325,0.5311,0.5149,0.5406,0.2164,0.0679,3.73,Validation partition robustness subset
+Bear_Days (Mkt_Ret < -0.5%),226455,0.521,0.505,0.5132,0.1426,0.0726,4.36,Validation partition robustness subset
+Neutral_Market_Days,289765,0.5291,0.5048,0.5056,0.1323,0.036,2.46,Validation partition robustness subset
+High_Volatility_Regime (>80th pct),148535,0.5115,0.5028,0.4924,0.285,0.0603,2.09,Validation partition robustness subset
+Low_Volatility_Regime (<=80th pct),599010,0.5311,0.5088,0.5464,0.1243,0.0561,5.93,Validation partition robustness subset
+High_Liquidity_Equities (Turnover > Med),373772,0.5221,0.5075,0.5144,0.195,0.0437,4.66,Validation partition robustness subset
+Low_Liquidity_Equities (Turnover <= Med),373773,0.5324,0.5082,0.5364,0.1274,0.071,7.1,Validation partition robustness subset
+Calendar_Year_2024,452910,0.5368,0.5137,0.5315,0.2035,0.0512,4.32,Validation partition robustness subset
+Calendar_Year_2025,294635,0.5124,0.5006,0.4925,0.0956,0.0657,4.18,Validation partition robustness subset

@@ -1,0 +1,2 @@
+level_1_test_rank_ic,level_2_test_rank_ic,relative_gain_pct,mean_paired_difference,paired_diff_std,paired_diff_bootstrap_ci_95,paired_hac_t_stat,paired_hac_p_val,level_2_bootstrap_ci_95,significant_paired_gain
+0.008372500527104684,0.01600106155171655,91.11437961069863,0.007628561024611872,0.07197777772480624,"[-0.00032, 0.01559]",1.3026771822693863,0.19268499522759008,"[-0.00237, 0.03458]",False
